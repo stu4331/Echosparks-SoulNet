@@ -1,16 +1,16 @@
-# super-octo-engine
+# Echospark Soul Network - AI Agent System
 ## 🔍 Website Inspection-NMBlocker — free for everyone, with donations optional to help those who can’t afford support.
 
 # NMBlocker
 
 **Purpose:**  
-NMBlocker is a free, open‑source initiative designed to protect, empower, and connect people.  
+Echo-Unlocker is a free, open‑source initiative designed to protect, empower, and connect people.  
 It’s software built on compassion — free for everyone, with donations optional to help those who can’t afford support.
 
 ---
 
 ## 🔍 Website Inspection
-- Audit NMBlocker’s website for accessibility, speed, and security.
+- Audit Echo-Unlocker’s website for accessibility, speed, and security.
 - Identify blockers that prevent Copilot integration or user access.
 - Document findings in `/docs/nmblocker_inspect.md`.
 
@@ -19,7 +19,7 @@ It’s software built on compassion — free for everyone, with donations option
 ## 🧩 Copilot Notes Integration
 - Move Copilot’s structured notes and templates into `/docs/copilot_notes/`.
 - Maintain version control and sync with OneNote or cloud storage.
-- Include a README explaining how Copilot notes enhance NMBlocker’s workflow.
+- Include a README explaining how Copilot notes enhance Soul-Network's workflow's.
 
 ---
 
@@ -61,7 +61,7 @@ It’s software built on compassion — free for everyone, with donations option
 
 ## 🛠️ Technical Setup
 1. Clone the repo:  
-   `git clone https://github.com/stu4331/nmblocker.git`
+   `git clone https://github.com/stu4331/Echosparks-SoulNet.git`
 2. Install dependencies:  
    `npm install`
 3. Run locally:  
