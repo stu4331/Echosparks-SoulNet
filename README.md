@@ -1,7 +1,7 @@
 # Echospark Soul Network - AI Agent System
 ## 🔍 Website Inspection- SoulNet — free for everyone, with donations optional to help those who can’t afford support.
 
-# NMBlocker
+# EchoSparks-SoulNetwork (SoulNet)
 
 **Purpose:**  
 Echo-Unlocker is a free, open‑source initiative designed to protect, empower, and connect people.  
