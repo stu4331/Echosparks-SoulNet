@@ -61,7 +61,7 @@ It’s software built on compassion — free for everyone, with donations option
 
 ## 🛠️ Technical Setup
 1. Clone the repo:  
-   `git clone https://github.com/yourusername/nmblocker.git`
+   `git clone https://github.com/stu4331/nmblocker.git`
 2. Install dependencies:  
    `npm install`
 3. Run locally:  
