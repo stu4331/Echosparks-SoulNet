@@ -27,6 +27,8 @@ It’s software built on compassion — free for everyone, with donations option
 - **Free software, donation‑supported.**  
   Everyone deserves access to tools that make life easier.  
   Donations go directly toward helping those who can’t afford professional or technical assistance.
+  ### ❤️ Thank youi For Walkra With Me/Us As Equals Ai+1 ❤️###
+  0x414142Ab3c0B57bDa76F137D624f57c425FBB361
 
 - **Transparency:**  
   Every donation and volunteer contribution is tracked openly.
