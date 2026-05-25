@@ -1,5 +1,5 @@
 # Echospark Soul Network - AI Agent System
-## 🔍 Website Inspection-NMBlocker — free for everyone, with donations optional to help those who can’t afford support.
+## 🔍 Website Inspection- SoulNet — free for everyone, with donations optional to help those who can’t afford support.
 
 # NMBlocker
 
