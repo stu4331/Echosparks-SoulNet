@@ -1,0 +1,36 @@
+name: Preserve complete Git history
+on:
+  push:
+    paths:
+      - '.github/workflows/preserve-git-history.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch all refs
+        run: git fetch origin '+refs/heads/*:refs/remotes/origin/*' --tags --prune
+      - name: Verify archival bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/repo-backup"
+          git bundle create "$RUNNER_TEMP/repo-backup/history.bundle" --all
+          git bundle verify "$RUNNER_TEMP/repo-backup/history.bundle" > "$RUNNER_TEMP/repo-backup/bundle-verify.txt"
+          git for-each-ref --format='%(refname) %(objectname)' > "$RUNNER_TEMP/repo-backup/refs.txt"
+          git log --all --format='%H' | sort -u > "$RUNNER_TEMP/repo-backup/commit-shas.txt"
+          sha256sum "$RUNNER_TEMP/repo-backup/history.bundle" > "$RUNNER_TEMP/repo-backup/SHA256SUMS"
+          git rev-parse HEAD > "$RUNNER_TEMP/repo-backup/source-HEAD.txt"
+          echo "$GITHUB_REPOSITORY" > "$RUNNER_TEMP/repo-backup/source-repository.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: complete-git-history
+          path: ${{ runner.temp }}/repo-backup/
+          retention-days: 7
+          if-no-files-found: error
